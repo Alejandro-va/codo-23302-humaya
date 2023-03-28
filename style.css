@@ -3,47 +3,101 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: #fff;
+  line-height: 1.5;
 }
 
 .container {
-  border: 10px solid blue;
+  border: 5px solid blue;
 }
 
 #header {
-  border: 3px solid rgb(187, 255, 0);
-  background-image: url(./IMAGENES/Central/imagenCentral.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+  width: 100%;
 }
 
+.contentNav {
+  position: fixed;
+  width: 85%;
+  /* border: 5px solid #fff; */
+  z-index: 1;
+}
 /****************************************
 * MENU TELF
 ****************************************/
 .navbar {
-  border: 3px solid rgb(255, 0, 0);
+  /* border: 3px solid rgb(255, 0, 0); */
 }
 
 /****************************************
 * MENU PC
 ****************************************/
 #navbarNav {
-  border: 3px solid rgb(21, 221, 75);
+  /* border: 3px solid rgb(21, 221, 75); */
   width: 80%;
-  display: flex;
   justify-content: center;
-  position: fixed;
   top: 1rem;
 }
 
 #navbarNav ul {
   justify-content: space-between;
   width: 60%;
-  border: 3px solid rgb(8, 8, 8);
+  /* border: 3px solid rgb(8, 8, 8); */
 }
 
 #navbarNav ul li {
   align-items: center;
   align-self: center;
+}
+
+/* ************************************************************* */
+main {
+  width: 100%;
+}
+/*************************************
+SECTION PORTADA(CABECERA)
+*************************************/
+#portada {
+  height: 100vh;
+  /* border: 3px solid rgb(187, 255, 0); */
+  position: relative;
+}
+
+.imgContent {
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid rgb(255, 0, 153); */
+  z-index: -1;
+}
+#imgHeader {
+  object-fit: cover;
+  /* object-position: 50% 50%; */
+  width: 100%;
+  height: 100%;
+}
+#portadaDetalles {
+  position: absolute;
+  top: 304px;
+  z-index: 1;
+  width: 40%;
+  right: 1.5rem;
+}
+
+#portadaP {
+  width: 80%;
+  size: 3.5rem;
+  line-height: 2;
+}
+
+#calidad {
+  background-color: #5a5555;
+}
+
+#portadaBtn {
+  background-color: #211816;
+  opacity: 0.7;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  /*  margin: 3rem 3rem; */
 }
